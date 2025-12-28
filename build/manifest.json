@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "엔트리 도배방지 타이머",
+  "version": "1.0",
+  "description": "도배방지 시 자동으로 타이머를 표시합니다",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://playentry.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
